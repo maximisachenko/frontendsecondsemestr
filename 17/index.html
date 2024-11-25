@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Работа с событиями</h1>
+    <h1>Исаченко Максим</h1>
+
+    <!-- Событие мыши -->
+    <div id="mouse-event" class="event-box">
+        <h2>Событие мыши</h2>
+        <p>Кликните на этот блок</p>
+    </div>
+
+    <!-- Событие клавиатуры -->
+    <div id="keyboard-event" class="event-box">
+        <h2>Событие клавиатуры</h2>
+        <input type="text" id="keyboard-input" placeholder="Введите текст...">
+        <p id="keyboard-output">Здесь появится нажатая клавиша</p>
+    </div>
+
+    <!-- Drag & Drop -->
+    <div class="event-box drag-area">
+        <h2>Drag & Drop</h2>
+        <div id="drag-source" class="draggable" draggable="true">Перетащите меня</div>
+        <div id="drop-target" class="dropzone">Сбросьте сюда</div>
+    </div>
+
+    <!-- События указателя -->
+    <div id="pointer-event" class="event-box">
+        <h2>Pointer Event</h2>
+        <p>Наведите указатель сюда</p>
+    </div>
+
+    <!-- Событие прокрутки -->
+    <div id="scroll-event" class="scroll-box">
+        <h2>Событие прокрутки</h2>
+        <div class="scroll-content">
+            <p>Прокрутите это содержимое вниз, чтобы увидеть событие.</p>
+            <p>Продолжайте прокручивать.</p>
+            <p>Еще немного прокрутки.</p>
+            <p>Вы почти дошли до конца.</p>
+            <p>Ура! Вы дошли до конца.</p>
+        </div>
+    </div>
+
+    <!-- События сенсорных экранов -->
+    <div id="touch-event" class="event-box">
+        <h2>Событие сенсорных экранов</h2>
+        <p>Коснитесь этого блока на сенсорном устройстве.</p>
+    </div>
+
+    <!-- Таймер -->
+    <div class="event-box">
+        <h2>Событие таймера</h2>
+        <p id="timer-output">10</p>
+        <button id="start-timer">Запустить таймер</button>
+        <button id="stop-timer">Остановить таймер</button>
+        <button id="speed-up">Ускорить таймер</button>
+        <button id="slow-down">Замедлить таймер</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

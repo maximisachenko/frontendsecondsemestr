@@ -1,0 +1,89 @@
+/* Общий стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Светло-голубой фон */
+    color: #0077b6; /* Глубокий синий текст */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Центрирование заголовков */
+h1, h2 {
+    text-align: center;
+    color: #005f73; /* Темный голубой */
+}
+
+/* Контейнер для списка продуктов */
+#product-list {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переходить на новую строку */
+    justify-content: center; /* Центрирует элементы по горизонтали */
+}
+
+/* Стиль для продуктов */
+.product {
+    background-color: #ffffff; /* Белый фон для карточки товара */
+    border: 2px solid #0077b6; /* Синяя рамка */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2); /* Тень для объёма */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    /* Анимация при наведении */
+    .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 119, 182, 0.4); /* Увеличение тени при наведении */
+    }
+
+    /* Стиль для изображений */
+    .product img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Заголовки продуктов */
+    .product h3 {
+        font-size: 1.5em;
+        color: #0077b6; /* Глубокий синий цвет для заголовков */
+    }
+
+    /* Описание товара */
+    .product p {
+        color: #005f73; /* Темно-голубой текст */
+    }
+
+    /* Кнопка "Add to Cart" */
+    .product button {
+        background-color: #00b4d8; /* Яркий голубой цвет кнопки */
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+    }
+
+        /* Изменение цвета кнопки при наведении */
+        .product button:hover {
+            background-color: #0077b6; /* Темно-синий цвет при наведении */
+        }
+
+/* Корзина */
+.cart {
+    background-color: #caf0f8; /* Светло-голубой фон корзины */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 119, 182, 0.2);
+}
+
+    .cart .product {
+        margin: 10px 0;
+    }

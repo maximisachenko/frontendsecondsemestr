@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Second Semestr</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3px;
+            padding: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 3s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            background-color: transparent;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-align: center;
+            overflow: hidden;
+        }
+
+            .button:hover {
+                background-image: linear-gradient(to bottom, #0056b3, #007BFF);
+                color: #fff;
+                border-color: #0056b3;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <a href="1516/index.html" class="button">Laboratory work №15-16</a>
+        <a href="17/index.html" class="button">Laboratory work №17</a>
+        <a href="18/index.html" class="button">Laboratory work №18</a>
+        <a href="1920Products/index.html" class="button">Laboratory work №19-20 (JSON Products)</a>
+        <a href="1920Local/index.html" class="button">Laboratory work №19-20 (Local Storage)</a>
+        <a href="1920Cookie/index.html" class="button">Laboratory work №19-20 (Cookie)</a>
+    </div>
+
+    <div class="header">
+        <h1>Laboratory work on Front-End for the second semester (Maxim Isachenko PZT-39)</h1>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('.header h1');
+            setTimeout(function () {
+                header.style.animation = 'fadeOut 3s ease forwards';
+            }, 10000);
+            setTimeout(function () {
+                header.style.opacity = '0';
+                header.style.animation = 'fadeIn 3s ease forwards';
+            }, 13000);
+        });
+    </script>
+</body>
+</html>

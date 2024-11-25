@@ -1,0 +1,149 @@
+/* Общие стили для сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #2980b9;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Стиль контейнеров для событий */
+.event-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+    .event-box:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background-color: #ecf0f1;
+    }
+
+/* Стиль для ввода текста */
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+/* Стиль для Drag & Drop */
+.draggable {
+    padding: 12px;
+    background-color: #b3e5fc; /* Нежно-голубой цвет */
+    cursor: grab;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    margin: 20px auto;
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+    .draggable:active {
+        cursor: grabbing;
+    }
+
+.dropzone {
+    border: 2px dashed #3498db;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+    .dropzone:hover {
+        background-color: #ecf0f1;
+    }
+
+/* Центровка текста в Drag & Drop */
+.drag-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Цвет, когда элемент сброшен */
+.dropzone.dropped {
+    background-color: #81d4fa; /* Более темный оттенок нежно-голубого */
+}
+
+/* Стиль для области прокрутки */
+.scroll-box {
+    width: 300px;
+    height: 150px;
+    overflow-y: scroll;
+    border: 2px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-content {
+    height: 300px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+/* Стиль для кнопки таймера */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+#timer-output {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Стиль для контейнера с сенсорными событиями */
+#touch-event {
+    background-color: #b3e5fc;
+    color: #333;
+}
+
+#pointer-event {
+    transition: background-color 0.3s;
+}
+
+    /* Изменение цвета при наведении */
+    #pointer-event:hover {
+        background-color: #b3e5fc;
+    }

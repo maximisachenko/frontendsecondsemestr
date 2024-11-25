@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пользовательская форма с валидацией и регулярными выражениями</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Пользовательская форма</h2>
+    <form id="userForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required minlength="2" maxlength="50">
+
+        <label for="age">Возраст:</label>
+        <input type="text" id="age" name="age" placeholder="Введите ваш возраст" required pattern="\d+" title="Возраст должен быть числом">
+
+        <label for="gender">Пол:</label>
+        <input type="radio" id="male" name="gender" value="Мужской" checked> Мужской
+        <input type="radio" id="female" name="gender" value="Женский"> Женский
+
+        <label for="interests">Интересы:</label>
+        <input type="checkbox" id="sport" name="interest" value="Спорт"> Спорт
+        <input type="checkbox" id="music" name="interest" value="Музыка"> Музыка
+        <input type="checkbox" id="reading" name="interest" value="Чтение"> Чтение
+
+        <label for="country">Страна:</label>
+        <select id="country" name="country" required>
+            <option value="">Выберите страну</option>
+            <option value="Россия">Россия</option>
+            <option value="США">США</option>
+            <option value="Германия">Германия</option>
+        </select>
+
+        <button type="submit">Отправить</button>
+    </form>
+
+    <!-- Блок для вывода результата -->
+    <div id="result"></div>
+
+    <!-- Блок для проверки регулярных выражений -->
+    <h3>Проверка текста</h3>
+    <input type="text" id="inputText" placeholder="Введите текст для проверки">
+    <button id="checkButton">Проверить</button>
+
+    <div id="regexResult"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

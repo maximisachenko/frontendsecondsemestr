@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Organic Apple",
+      "description": "Fresh and natural apples grown without pesticides.",
+      "price": 2.50,
+      "stock": 50,
+      "image": "images/apple.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Fresh Banana",
+      "description": "Juicy and ripe bananas, rich in vitamins and essential nutrients, perfect for a healthy snack.",
+      "price": 3.00,
+      "stock": 30,
+      "image": "images/banana.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Natural Bread",
+      "description": "Whole grain bread made without additives, providing energy to fuel your day.",
+      "price": 8.99,
+      "stock": 20,
+      "image": "images/bread.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Natural Peanut Butter",
+      "description": "Peanut butter with no preservatives or added sugars, rich in protein and healthy fats.",
+      "price": 12.00,
+      "stock": 15,
+      "image": "images/butter.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Natural Yogurt",
+      "description": "Natural yogurt made from fresh milk, free from artificial additives, perfect for a healthy breakfast.",
+      "price": 1.99,
+      "stock": 40,
+      "image": "images/yougurt.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Organic Orange Juice",
+      "description": "Organic orange juice with a rich taste, made from ripe oranges with no added sugar.",
+      "price": 4.50,
+      "stock": 25,
+      "image": "images/juice.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Organic Carrots",
+      "description": "Organic carrots grown without chemicals, rich in beta-carotene and great for eye health.",
+      "price": 6.50,
+      "stock": 10,
+      "image": "images/carrot.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Cheese",
+      "description": "Smooth and flavorful cheese, ideal for adding to dishes or enjoying on its own.",
+      "price": 2.25,
+      "stock": 60,
+      "image": "images/cheese.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Fresh Cucumber",
+      "description": "Crisp and fresh cucumbers, packed with vitamins, perfect for salads and snacks.",
+      "price": 15.00,
+      "stock": 12,
+      "image": "images/cucumber.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Natural Oats",
+      "description": "Natural oats with no additives, a great choice for a nutritious and filling breakfast.",
+      "price": 5.00,
+      "stock": 35,
+      "image": "images/oat.jpg"
+    }
+  ]
+}
